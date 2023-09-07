@@ -13,7 +13,7 @@ import java.util.List;
 @WebServlet(name = "formServlet", value ={ "/form"})
 public class FormServlet extends HttpServlet {
 
-    static List<Car> cars;
+    public static List<Car> cars;
 
     @Override
     public void init() throws ServletException {

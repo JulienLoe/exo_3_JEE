@@ -69,7 +69,7 @@
         <tbody>
 
         <% if (confirmation) { %>
-        <p>Chat ajouté avec succès !</p>
+        <p>Voiture ajouté avec succès !</p>
         <% } else if (!errors.isEmpty()) { %>
         <ul>
             <% for(String err : errors) { %>
@@ -80,12 +80,12 @@
         <hr>
         <% if (!cars.isEmpty()) { %>
 
-        <% for (int i=1; i<cars.size(); i++) { %>
+        <% for (int i=0; i<cars.size(); i++) { %>
         <tr>
 
             <td><%=cars.get(i).getMarque() %></td>
             <td><%=cars.get(i).getModel() %></td>
-            <td><button class="btn btn-primary" value="i"><a href="${pageContext.request.contextPath}/form/<%=i%> ">DETAIL</a></button></td>
+            <td><button class="btn btn-primary" value="i"><a class="text-light" href="${pageContext.request.contextPath}/form/<%=i%> ">DETAIL</a></button></td>
 <%--            <td><%=cars.get(i).getCouleur() %></td>--%>
 <%--            <td><%=cars.get(i).getPuissance() %></td>--%>
         </tr>
