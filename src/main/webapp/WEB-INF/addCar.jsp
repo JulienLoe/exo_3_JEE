@@ -8,32 +8,45 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Add a Person</title>
+    <%@ include file ="./bootStrapImport.html"%>
+    <title>Add a Car</title>
+
 </head>
 <body>
-<main>
+<main class="text-center">
+    <h1 class="text-center">Ajouter une voiture :</h1>
+    <hr>
+
+    <div  class=" d-flex justify-content-center w-100 text-center text-light">
+        <div class="text-center bg-dark w-25 m-4 p-4 rounded">
     <form action="form" method="post">
-        <div>
-            <label for="marque">Marque: </label>
-            <input type="text" name="marque" id="marque">
+
+
+
+        <div class="mb-3">
+            <label for="marque" class="form-label">Marque: </label>
+            <input class="form-control" type="text" name="marque" id="marque">
         </div>
-        <div>
-            <label for="model">Model: </label>
-            <input type="text" name="model" id="model">
+        <div class="mb-3">
+            <label for="model" class="form-label">Model: </label>
+            <input class="form-control" type="text" name="model" id="model">
         </div>
-        <div>
-            <label for="couleur">Couleur: </label>
-            <input type="text" name="couleur" id="couleur">
+        <div class="mb-3">
+            <label for="couleur" class="form-label">Couleur: </label>
+            <input class="form-control" type="text" name="couleur" id="couleur">
         </div>
-        <div>
-            <label for="puissance">Puissance: </label>
-            <input type="number" min="0" max="800" step="1" name="puissance" id="puissance">
+        <div class="mb-3">
+            <label for="puissance" class="form-label">Puissance: </label>
+            <input class="form-control" type="number" min="0" max="800" step="1" name="puissance" id="puissance">
         </div>
         <hr>
 
-        <button>Submit</button>
+        <button class="btn btn-primary">Submit</button>
+
 
     </form>
+            </div>
+    </div>
 </main>
 </body>
 </html>
